@@ -1,0 +1,15 @@
+@mixin letra {
+    @media (min-width:900px){
+        @content    
+    }
+} 
+body{
+    p, option, input, td, th{
+        font-size: .8rem;
+    }
+    @include letra(){
+        p{
+            font-size: 1rem;
+        }
+    }
+}

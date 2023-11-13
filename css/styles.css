@@ -1,0 +1,299 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body p, body option, body input, body td, body th {
+  font-size: 0.8rem;
+}
+@media (min-width: 900px) {
+  body p {
+    font-size: 1rem;
+  }
+}
+
+form {
+  width: 95vw;
+  margin: auto;
+}
+
+section.title {
+  border: 1px solid black;
+  width: 100%;
+  margin: auto;
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "f1 f2" "f3 f3";
+  gap: 5px;
+}
+section.title .f1 {
+  grid-area: f1;
+}
+section.title .f1 div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+section.title .f2 {
+  grid-area: f2;
+}
+section.title .f2 div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+section.title .f3 {
+  grid-area: f3;
+  text-align: center;
+}
+section.title article {
+  padding: 5px;
+}
+@media (min-width: 750px) {
+  section.title {
+    display: grid;
+    grid-template-columns: 35% 35% 29%;
+    grid-template-rows: 100%;
+    grid-template-areas: "f1 f2 f3";
+    gap: 1px;
+    align-items: center;
+  }
+}
+
+section.tabla {
+  width: 100%;
+  margin: auto;
+  margin-top: 5px;
+  gap: 5px;
+}
+section.tabla article {
+  border: 1px solid black;
+}
+section.tabla article table {
+  text-align: center;
+  width: 100%;
+}
+section.tabla article table tr {
+  width: 100%;
+}
+section.tabla article table tr th select, section.tabla article table tr td select {
+  width: 70%;
+}
+@media (min-width: 750px) {
+  section.tabla {
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+  }
+  section.tabla article {
+    border: 0px solid black;
+    display: flex;
+  }
+  section.tabla article table {
+    width: 50%;
+    border: 1px solid black;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  section.tabla article table tr {
+    width: 100%;
+  }
+  section.tabla article table tr th select, section.tabla article table tr td select {
+    width: 100%;
+  }
+  section.tabla article table tr input {
+    width: 80%;
+  }
+}
+
+section.total {
+  margin-top: 5px;
+  gap: 5px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "at1 at2" "at3 at3";
+}
+section.total .at1 {
+  grid-area: at1;
+  padding: 5%;
+  text-align: center;
+  border: 1px solid black;
+}
+section.total .at2 {
+  grid-area: at2;
+  padding: 5%;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+}
+section.total .at2 div.at {
+  display: flex;
+  flex-direction: column;
+}
+section.total .at3 {
+  grid-area: at3;
+  text-align: center;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+}
+@media (min-width: 750px) {
+  section.total {
+    border: 1px solid black;
+    width: 100%;
+    margin-top: 5px;
+    gap: 0px;
+    display: grid;
+    grid-template-columns: 15% 45% 40%;
+    grid-template-areas: "at1 at2 at3";
+  }
+  section.total select {
+    width: 50%;
+  }
+  section.total input {
+    width: 50%;
+  }
+  section.total .at2 {
+    border: 0px solid black;
+  }
+  section.total .at3 {
+    border: 0px solid black;
+  }
+}
+
+section.end {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-areas: "end1 end2";
+  gap: 5px;
+}
+section.end article.end1 {
+  width: 100%;
+  grid-area: end1;
+  border: 1px solid black;
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 25% 15% 0%;
+  grid-template-areas: "en1 en2" "en3 en3" "en4 en4";
+}
+section.end article.end1 div.en1 {
+  text-align: center;
+  grid-area: en1;
+  padding: 5px;
+}
+section.end article.end1 div.en2 {
+  grid-area: en2;
+  padding: 5px;
+}
+section.end article.end1 div.en3 {
+  text-align: center;
+  grid-area: en3;
+}
+section.end article.end1 div.en3 textarea {
+  width: 70%;
+  height: 60%;
+  margin: auto;
+}
+section.end article.end1 div.en4 {
+  grid-area: en4;
+}
+section.end article.end1 div.en4 div {
+  padding: 10px;
+}
+section.end article.end2 {
+  grid-area: end2;
+  margin-top: 5px;
+  border: 1px solid black;
+  text-align: center;
+}
+section.end article.end2 div.en1 {
+  margin-top: 10px;
+}
+section.end article.end2 div.en2 {
+  border: 1px solid black;
+  margin: 5px;
+  margin-top: 60px;
+  padding: 5px;
+}
+section.end img {
+  margin-top: 30px;
+  width: 100%;
+}
+@media (min-width: 750px) {
+  section.end {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-areas: "end1 end2";
+    gap: 5px;
+  }
+  section.end article.end1 {
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "en1 en2 en3" "en4 en4 en4";
+    align-items: baseline;
+  }
+  section.end article.end1 div.en1 {
+    text-align: center;
+    grid-area: en1;
+    padding: 5px;
+  }
+  section.end article.end1 div.en2 {
+    grid-area: en2;
+    padding: 0px;
+  }
+  section.end article.end1 div.en3 {
+    height: 100%;
+    text-align: center;
+    grid-area: en3;
+  }
+  section.end article.end1 div.en3 textarea {
+    width: 90%;
+    height: 50%;
+    margin: auto;
+  }
+  section.end article.end1 div.en4 {
+    grid-area: en4;
+  }
+  section.end article.end1 div.en4 div {
+    padding: 10px;
+  }
+  section.end article.end2 {
+    grid-area: end2;
+    margin-top: 5px;
+    border: 1px solid black;
+    text-align: center;
+  }
+  section.end article.end2 div.en1 {
+    margin-top: 10px;
+  }
+  section.end article.end2 div.en2 {
+    width: 75%;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+  }
+  section.end img {
+    margin-top: 30px;
+    width: 50%;
+  }
+}
+
+section.footer article {
+  align-content: center;
+}
+
+p.footer {
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

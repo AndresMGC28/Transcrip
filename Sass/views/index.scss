@@ -1,0 +1,300 @@
+@mixin grande {
+    @media (min-width:750px){
+        @content    
+    }
+}   
+
+form{
+    width: 95vw;
+    margin: auto;
+}
+section.title{
+    border: 1px solid black;
+	width: 100%;
+    margin: auto;
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "f1 f2"
+    "f3 f3";
+    gap: 5px;
+    .f1{
+        grid-area:f1;
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 10px;
+        }
+    }
+    .f2{
+        grid-area:f2;
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 10px;
+        }
+    }
+    .f3{
+        grid-area:f3;
+        text-align: center;
+    
+    }
+    article{
+        padding: 5px;
+    }
+    @include grande(){
+        display: grid;
+        grid-template-columns: 35% 35% 29%;
+        grid-template-rows: 100%;
+        grid-template-areas: 
+        "f1 f2 f3";
+        gap: 1px;
+        align-items: center;
+    }
+}
+section.tabla{
+    width: 100% ;
+    margin: auto;
+    margin-top: 5px;
+    gap: 5px;
+    article{
+        border: 1px solid black;
+        table{
+            text-align: center;
+            width: 100%;
+            tr{
+                width: 100%;
+                th,td{
+                    select{
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+    @include grande(){
+        width: 100% ;
+        margin: auto;
+        margin-top: 5px;
+        article{
+            border: 0px solid black;
+            display: flex;
+            table{
+                width: 50%;
+                border: 1px solid black;
+                margin-left: 5px;
+                margin-top: 5px;
+                tr{
+                    width: 100%;
+                    
+                    th,td{
+                        select{
+                            width: 100%;
+                        }
+                    }
+                    input{
+                        width: 80%;
+                    }
+                }
+            }
+        }   
+    }
+}
+section.total{
+    margin-top: 5px;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 20% 80% ;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "at1 at2"
+    "at3 at3";
+    .at1{
+        grid-area:at1;
+        padding: 5%;
+        text-align: center;
+        border: 1px solid black;
+    }
+    .at2{
+        grid-area:at2;
+        padding: 5%;
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid black;
+        div.at{
+        display: flex;
+        flex-direction: column;
+        }
+    }
+    .at3{
+        grid-area:at3;
+        text-align: center;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+    }
+    @include grande(){
+        border: 1px solid black;
+        width: 100%;
+        margin-top: 5px;
+        gap: 0px;
+        display: grid;
+        grid-template-columns: 15% 45% 40%;
+        grid-template-areas: 
+        "at1 at2 at3"
+        ;
+        select{
+            width: 50%;
+        }
+        input{
+            width: 50%;
+        }
+        .at2{
+            border: 0px solid black;
+        }
+        .at3{
+            border: 0px solid black;
+        }
+    }
+}
+section.end{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-areas: 
+    "end1 end2";
+    gap: 5px;
+    article.end1{ 
+        width: 100%;
+        grid-area:end1;
+        border: 1px solid black;
+        margin-top: 5px;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 25% 15% 0%;
+        grid-template-areas: 
+        "en1 en2"
+        "en3 en3"
+        "en4 en4";
+        div.en1{
+                text-align: center;
+                grid-area:en1;
+                padding: 5px;
+            }
+        div.en2{
+            grid-area:en2;
+            padding: 5px;
+
+        }
+        div.en3{
+            text-align: center;
+            grid-area:en3;
+            textarea{
+                width: 70%;
+                height: 60%;
+                margin: auto;
+            }
+        }
+        div.en4{
+            grid-area:en4;
+            div{
+                padding: 10px;
+            }
+        }
+    }
+    article.end2{
+        grid-area:end2;
+        margin-top: 5px;
+        border: 1px solid black;
+        text-align: center;
+        div.en1{        
+                margin-top: 10px;
+        }
+        div.en2{
+            border: 1px solid black;
+            margin: 5px;
+            margin-top: 60px;
+            padding: 5px;
+        }
+
+    }
+    img{
+        margin-top: 30px;
+        width: 100%;
+    }
+    @include grande(){
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-areas: 
+        "end1 end2";
+        gap: 5px;
+        article.end1{
+            grid-template-columns: 20% 40% 40%;
+            grid-template-rows: 50% 50%;
+            grid-template-areas: 
+            "en1 en2 en3"
+            "en4 en4 en4";
+            align-items: baseline;
+            div.en1{
+                    text-align: center;
+                    grid-area:en1;
+                    padding: 5px;
+                }
+            div.en2{
+                grid-area:en2;
+                padding: 0px;
+
+            }
+            div.en3{
+                height: 100%;
+                text-align: center;
+                grid-area:en3;
+                textarea{
+                    width: 90%;
+                    height: 50%;
+                    margin: auto;
+                }
+            }
+            div.en4{
+                grid-area:en4;
+                div{
+                    padding: 10px;
+                }
+            }
+        }
+        article.end2{
+            grid-area:end2;
+            margin-top: 5px;
+            border: 1px solid black;
+            text-align: center;
+            div.en1{        
+                    margin-top: 10px;
+            }
+            div.en2{
+                width: 75%;
+                border: 1px solid black;
+                margin: auto;
+                margin-top: 10px;
+                padding: 5px;
+            }
+    
+        }
+        img{
+            margin-top: 30px;
+            width: 50%;
+        }
+    }
+}
+section.footer{
+    article{
+        align-content: center;
+    }
+}
+p.footer{
+    text-align: center;
+}
