@@ -161,6 +161,9 @@ section.total .at3 {
   section.total input {
     width: 50%;
   }
+  section.total .at1 {
+    border: 0px solid;
+  }
   section.total .at2 {
     border: 0px solid black;
   }
