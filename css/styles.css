@@ -50,6 +50,9 @@ section.title .f2 div {
   padding-top: 10px;
 }
 section.title .f3 {
+  margin: auto;
+  margin-top: 10px;
+  padding: 5px;
   grid-area: f3;
   text-align: center;
 }
@@ -142,6 +145,7 @@ section.total .at2 div.at {
   flex-direction: column;
 }
 section.total .at3 {
+  width: 100%;
   grid-area: at3;
   text-align: center;
   padding: 5px;
@@ -149,6 +153,9 @@ section.total .at3 {
   flex-direction: column;
   align-items: center;
   border: 1px solid black;
+}
+section.total .at3 input {
+  width: 100%;
 }
 @media (min-width: 750px) {
   section.total {
@@ -228,6 +235,7 @@ section.end article.end2 div.en1 {
   margin-top: 10px;
 }
 section.end article.end2 div.en2 {
+  width: 90%;
   border: 1px solid black;
   margin: 5px;
   margin-top: 60px;
