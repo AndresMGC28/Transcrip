@@ -21,6 +21,7 @@ section.title{
     "f3 f3";
     gap: 10px;
     .f1{
+        width: 90%;
         grid-area:f1;
         div{
             display: flex;
@@ -28,6 +29,9 @@ section.title{
             align-items: center;
             justify-content: space-between;
             padding-top: 10px;
+            input{
+                width: 80%;
+            }
         }
     }
     .f2{
@@ -39,14 +43,23 @@ section.title{
             justify-content: space-between;
             padding-top: 10px;
             margin-top: 10px;
+            input{
+                width: 90%;
+            }
+            select{
+                text-align: center;
+                width: 40%;
+                margin:auto
+            }
         }
     }
     .f3{
-        width: 95%;
+        width: 90%;
         grid-area:f3;
         text-align: center;
         margin: auto;
         margin-top: 10px;
+        padding: 15px;
         div{
         margin: auto;
         margin-top: 10px;
@@ -65,8 +78,31 @@ section.title{
         "f1 f2 f3";
         gap: 1px;
         align-items: center;
-    }
-}
+        .f1{
+            width: 100%;
+            div{
+                input{
+                    width: auto;
+                }
+            }
+        }
+        .f2{
+            div{
+                width: 100%;
+                input{
+                    width: auto;
+                }
+                select{
+                    width: auto;
+                    margin-right: 50px;
+                }
+                }
+        }
+        }
+
+        }
+    
+
 section.tabla{
     width: 100% ;
     margin: auto;
@@ -135,10 +171,10 @@ section.total{
         border: 1px solid black;
     }
     .at2{
-        width: 100%;
+        width: 95%;
         grid-area:at2;
         display: flex;
-        margin-top: auto;
+        margin: 10px;
         padding: 5%;
         justify-content: space-around;
         border: 1px solid black;
@@ -222,17 +258,20 @@ section.end{
 
         }
         div.en3{
+            width: 100%;
             text-align: center;
             grid-area:en3;
             margin-top: 20px;
             textarea{
-                width: 70%;
-                height: 60%;
+                width: 80%;
+                height: 30px;
                 margin: auto;
+
 
             }
         }
         div.en4{
+            margin: auto;
             grid-area:en4;
             div{
                 padding: 10px;

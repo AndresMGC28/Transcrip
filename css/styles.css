@@ -30,6 +30,7 @@ section.title {
   gap: 10px;
 }
 section.title .f1 {
+  width: 90%;
   grid-area: f1;
 }
 section.title .f1 div {
@@ -38,6 +39,9 @@ section.title .f1 div {
   align-items: center;
   justify-content: space-between;
   padding-top: 10px;
+}
+section.title .f1 div input {
+  width: 80%;
 }
 section.title .f2 {
   grid-area: f2;
@@ -50,12 +54,21 @@ section.title .f2 div {
   padding-top: 10px;
   margin-top: 10px;
 }
+section.title .f2 div input {
+  width: 90%;
+}
+section.title .f2 div select {
+  text-align: center;
+  width: 40%;
+  margin: auto;
+}
 section.title .f3 {
-  width: 95%;
+  width: 90%;
   grid-area: f3;
   text-align: center;
   margin: auto;
   margin-top: 10px;
+  padding: 15px;
 }
 section.title .f3 div {
   margin: auto;
@@ -74,6 +87,22 @@ section.title article {
     grid-template-areas: "f1 f2 f3";
     gap: 1px;
     align-items: center;
+  }
+  section.title .f1 {
+    width: 100%;
+  }
+  section.title .f1 div input {
+    width: auto;
+  }
+  section.title .f2 div {
+    width: 100%;
+  }
+  section.title .f2 div input {
+    width: auto;
+  }
+  section.title .f2 div select {
+    width: auto;
+    margin-right: 50px;
   }
 }
 
@@ -142,10 +171,10 @@ section.total .at1 {
   border: 1px solid black;
 }
 section.total .at2 {
-  width: 100%;
+  width: 95%;
   grid-area: at2;
   display: flex;
-  margin-top: auto;
+  margin: 10px;
   padding: 5%;
   justify-content: space-around;
   border: 1px solid black;
@@ -226,16 +255,18 @@ section.end article.end1 div.en2 {
   padding: 5px;
 }
 section.end article.end1 div.en3 {
+  width: 100%;
   text-align: center;
   grid-area: en3;
   margin-top: 20px;
 }
 section.end article.end1 div.en3 textarea {
-  width: 70%;
-  height: 60%;
+  width: 80%;
+  height: 30px;
   margin: auto;
 }
 section.end article.end1 div.en4 {
+  margin: auto;
   grid-area: en4;
 }
 section.end article.end1 div.en4 div {
