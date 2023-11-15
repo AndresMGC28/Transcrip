@@ -27,7 +27,7 @@ section.title {
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   grid-template-areas: "f1 f2" "f3 f3";
-  gap: 5px;
+  gap: 10px;
 }
 section.title .f1 {
   grid-area: f1;
@@ -48,12 +48,19 @@ section.title .f2 div {
   align-items: center;
   justify-content: space-between;
   padding-top: 10px;
+  margin-top: 10px;
 }
 section.title .f3 {
+  width: 95%;
+  grid-area: f3;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+}
+section.title .f3 div {
   margin: auto;
   margin-top: 10px;
   padding: 5px;
-  grid-area: f3;
   text-align: center;
 }
 section.title article {
@@ -87,10 +94,10 @@ section.tabla article table tr {
   width: 100%;
 }
 section.tabla article table tr th select, section.tabla article table tr td select {
-  width: 80%;
+  width: 70%;
 }
 section.tabla article table tr input {
-  width: 50%;
+  width: 70%;
 }
 @media (min-width: 750px) {
   section.tabla {
@@ -121,6 +128,7 @@ section.tabla article table tr input {
 
 section.total {
   margin-top: 5px;
+  margin: auto;
   gap: 5px;
   display: grid;
   grid-template-columns: 20% 80%;
@@ -134,15 +142,23 @@ section.total .at1 {
   border: 1px solid black;
 }
 section.total .at2 {
+  width: 100%;
   grid-area: at2;
-  padding: 5%;
   display: flex;
+  margin-top: auto;
+  padding: 5%;
   justify-content: space-around;
   border: 1px solid black;
 }
 section.total .at2 div.at {
   display: flex;
   flex-direction: column;
+}
+section.total .at2 input {
+  width: 80%;
+}
+section.total .at2 select {
+  width: 80%;
 }
 section.total .at3 {
   width: 100%;
@@ -155,7 +171,7 @@ section.total .at3 {
   border: 1px solid black;
 }
 section.total .at3 input {
-  width: 100%;
+  width: 80%;
 }
 @media (min-width: 750px) {
   section.total {

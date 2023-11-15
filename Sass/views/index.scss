@@ -19,7 +19,7 @@ section.title{
     grid-template-areas: 
     "f1 f2"
     "f3 f3";
-    gap: 5px;
+    gap: 10px;
     .f1{
         grid-area:f1;
         div{
@@ -38,15 +38,21 @@ section.title{
             align-items: center;
             justify-content: space-between;
             padding-top: 10px;
+            margin-top: 10px;
         }
     }
     .f3{
+        width: 95%;
+        grid-area:f3;
+        text-align: center;
+        margin: auto;
+        margin-top: 10px;
+        div{
         margin: auto;
         margin-top: 10px;
         padding: 5px;
-        grid-area:f3;
         text-align: center;
-    
+        }
     }
     article{
         padding: 5px;
@@ -75,11 +81,11 @@ section.tabla{
                 width: 100%;
                 th,td{
                     select{
-                        width: 80%;
+                        width: 70%;
                     }
                 }
                 input{
-                    width: 50%;
+                    width: 70%;
                 }
             }
         }
@@ -114,6 +120,7 @@ section.tabla{
 }
 section.total{
     margin-top: 5px;
+    margin: auto;
     gap: 5px;
     display: grid;
     grid-template-columns: 20% 80% ;
@@ -128,14 +135,22 @@ section.total{
         border: 1px solid black;
     }
     .at2{
+        width: 100%;
         grid-area:at2;
-        padding: 5%;
         display: flex;
+        margin-top: auto;
+        padding: 5%;
         justify-content: space-around;
         border: 1px solid black;
         div.at{
         display: flex;
         flex-direction: column;
+        }
+        input{
+            width: 80%;
+        }
+        select{
+            width: 80%;
         }
     }
     .at3{
@@ -148,7 +163,7 @@ section.total{
         align-items: center;
         border: 1px solid black;
         input{
-            width: 100%;
+            width: 80%;
         }
     }
     @include grande(){
