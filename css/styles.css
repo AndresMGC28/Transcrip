@@ -34,6 +34,7 @@ section.title .f1 {
 }
 section.title .f1 div {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding-top: 10px;
@@ -43,6 +44,7 @@ section.title .f2 {
 }
 section.title .f2 div {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding-top: 10px;
@@ -82,7 +84,10 @@ section.tabla article table tr {
   width: 100%;
 }
 section.tabla article table tr th select, section.tabla article table tr td select {
-  width: 70%;
+  width: 80%;
+}
+section.tabla article table tr input {
+  width: 50%;
 }
 @media (min-width: 750px) {
   section.tabla {
@@ -200,6 +205,7 @@ section.end article.end1 div.en2 {
 section.end article.end1 div.en3 {
   text-align: center;
   grid-area: en3;
+  margin-top: 20px;
 }
 section.end article.end1 div.en3 textarea {
   width: 70%;
@@ -226,6 +232,9 @@ section.end article.end2 div.en2 {
   margin: 5px;
   margin-top: 60px;
   padding: 5px;
+}
+section.end article.end2 div.en2 input {
+  width: 100%;
 }
 section.end img {
   margin-top: 30px;

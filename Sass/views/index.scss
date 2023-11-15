@@ -24,6 +24,7 @@ section.title{
         grid-area:f1;
         div{
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
             padding-top: 10px;
@@ -33,6 +34,7 @@ section.title{
         grid-area:f2;
         div{
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
             padding-top: 10px;
@@ -70,8 +72,11 @@ section.tabla{
                 width: 100%;
                 th,td{
                     select{
-                        width: 70%;
+                        width: 80%;
                     }
+                }
+                input{
+                    width: 50%;
                 }
             }
         }
@@ -197,10 +202,12 @@ section.end{
         div.en3{
             text-align: center;
             grid-area:en3;
+            margin-top: 20px;
             textarea{
                 width: 70%;
                 height: 60%;
                 margin: auto;
+
             }
         }
         div.en4{
@@ -223,6 +230,9 @@ section.end{
             margin: 5px;
             margin-top: 60px;
             padding: 5px;
+            input{
+                width: 100%;
+            }
         }
 
     }
