@@ -67,13 +67,11 @@ section.title .f3 {
   grid-area: f3;
   text-align: center;
   margin: auto;
-  margin-top: 10px;
-  padding: 15px;
+  padding: 25px;
 }
 section.title .f3 div {
   margin: auto;
-  margin-top: 10px;
-  padding: 5px;
+  padding: 15px;
   text-align: center;
 }
 section.title article {
@@ -171,11 +169,12 @@ section.total .at1 {
   border: 1px solid black;
 }
 section.total .at2 {
-  width: 95%;
+  width: 97%;
+  height: 98%;
+  margin: auto;
   grid-area: at2;
   display: flex;
-  margin: 10px;
-  padding: 5%;
+  padding: 15px;
   justify-content: space-around;
   border: 1px solid black;
 }
@@ -256,9 +255,12 @@ section.end article.end1 div.en2 {
 }
 section.end article.end1 div.en3 {
   width: 100%;
+  height: 100%;
   text-align: center;
   grid-area: en3;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 5px;
 }
 section.end article.end1 div.en3 textarea {
   width: 80%;
@@ -267,6 +269,7 @@ section.end article.end1 div.en3 textarea {
 }
 section.end article.end1 div.en4 {
   margin: auto;
+  margin-top: 15px;
   grid-area: en4;
 }
 section.end article.end1 div.en4 div {
@@ -348,6 +351,14 @@ section.end img {
     margin: auto;
     margin-top: 10px;
     padding: 5px;
+  }
+  section.end article.end2 div.en4 {
+    margin: auto;
+    margin-top: auto;
+    grid-area: en4;
+  }
+  section.end article.end2 div.en4 div {
+    padding: 10px;
   }
   section.end img {
     margin-top: 30px;

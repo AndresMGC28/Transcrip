@@ -58,12 +58,10 @@ section.title{
         grid-area:f3;
         text-align: center;
         margin: auto;
-        margin-top: 10px;
-        padding: 15px;
+        padding: 25px;
         div{
         margin: auto;
-        margin-top: 10px;
-        padding: 5px;
+        padding: 15px;
         text-align: center;
         }
     }
@@ -100,9 +98,7 @@ section.title{
         }
         }
 
-        }
-    
-
+}
 section.tabla{
     width: 100% ;
     margin: auto;
@@ -171,11 +167,12 @@ section.total{
         border: 1px solid black;
     }
     .at2{
-        width: 95%;
+        width: 97%;
+        height: 98%;
+        margin: auto;
         grid-area:at2;
         display: flex;
-        margin: 10px;
-        padding: 5%;
+        padding: 15px;
         justify-content: space-around;
         border: 1px solid black;
         div.at{
@@ -259,19 +256,21 @@ section.end{
         }
         div.en3{
             width: 100%;
+            height: 100%;
             text-align: center;
             grid-area:en3;
-            margin-top: 20px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            padding: 5px;
             textarea{
                 width: 80%;
                 height: 30px;
                 margin: auto;
-
-
             }
         }
         div.en4{
             margin: auto;
+            margin-top: 15px;
             grid-area:en4;
             div{
                 padding: 10px;
@@ -356,6 +355,14 @@ section.end{
                 margin: auto;
                 margin-top: 10px;
                 padding: 5px;
+            }
+            div.en4{
+                margin: auto;
+                margin-top: auto;
+                grid-area:en4;
+                div{
+                    padding: 10px;
+                }
             }
     
         }
